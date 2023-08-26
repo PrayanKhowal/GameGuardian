@@ -1,0 +1,11 @@
+Our idea is that we will have a bot for this code. Parents can install this bot on thier mobiles/OS.
+On installation, parents can provide thier email ID.
+It will attach itself to the mobile/OS and record all the chat going on in any games present.
+Now, it will try to analyze the chat using our program.
+
+Algorithm used by our program:
+    It has a database of words which are inappropriate
+    It goes through each word of the chat and checks in the database if that word is present
+    If it is present, it will send an email to the parents
+    For checking phishing links, we are using google safe APIs (https://safebrowsing.googleapis.com/v4/)
+    For checking abusive content, we are using hugging face model API (https://api-inference.huggingface.co/models/unitary/toxic-bert)
